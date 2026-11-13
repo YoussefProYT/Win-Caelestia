@@ -1,0 +1,5 @@
+caelestia=https://github.com/caelestia-dots/shell@fd630ffedd45eb31817e9a1726a0f567e79f65e2
+quickshell-windows=https://github.com/nunreasonable/quickshell-windows@f876d854f71ff582360fb5f2f4c313882d9a5f38
+windows-port-tag=v0.3.2-win2
+qt=6.11.2
+qt-target=msvc2022_64

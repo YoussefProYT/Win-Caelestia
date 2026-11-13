@@ -1,0 +1,70 @@
+name: Windows build feasibility (diagnostic)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build-attempt:
+    runs-on: windows-2022
+    timeout-minutes: 90
+    steps:
+      - name: Checkout harness
+        uses: actions/checkout@v4
+      - name: Set up MSVC 2022 environment
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.8'
+      - name: Install pinned Qt 6.11.2 MSVC build
+        shell: pwsh
+        run: |
+          python -m pip install --disable-pip-version-check 'git+https://github.com/miurahr/aqtinstall.git@5a49f2b391ae8ee1d3c0dd87f8b33c1d49a4deb7'
+          python -m aqt install-qt windows desktop 6.11.2 win64_msvc2022_64 -m qt5compat qtimageformats qtmultimedia qtpositioning qtshadertools qtsvg -O .toolchain/qt
+          if ($LASTEXITCODE -ne 0) { throw "aqt Qt install failed: $LASTEXITCODE" }
+      - name: Fetch and verify pinned upstream commits
+        shell: pwsh
+        run: |
+          git clone https://github.com/nunreasonable/quickshell-windows.git upstream/port
+          git -C upstream/port fetch origin f876d854f71ff582360fb5f2f4c313882d9a5f38
+          git -C upstream/port checkout --detach f876d854f71ff582360fb5f2f4c313882d9a5f38
+          git clone https://github.com/caelestia-dots/shell.git upstream/caelestia
+          git -C upstream/caelestia fetch origin fd630ffedd45eb31817e9a1726a0f567e79f65e2
+          git -C upstream/caelestia checkout --detach fd630ffedd45eb31817e9a1726a0f567e79f65e2
+          if ((git -C upstream/port rev-parse HEAD) -ne 'f876d854f71ff582360fb5f2f4c313882d9a5f38') { throw 'Port revision mismatch' }
+          if ((git -C upstream/caelestia rev-parse HEAD) -ne 'fd630ffedd45eb31817e9a1726a0f567e79f65e2') { throw 'Caelestia revision mismatch' }
+      - name: Record environment
+        if: always()
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force logs | Out-Null
+          cmd /c ver | Out-File logs/windows-version.txt
+          cmake --version 2>&1 | Out-File logs/tool-versions.txt
+          git --version 2>&1 | Add-Content logs/tool-versions.txt
+          python --version 2>&1 | Add-Content logs/tool-versions.txt
+      - name: Attempt Quickshell Windows configure/build
+        shell: pwsh
+        run: |
+          $env:CMAKE_PREFIX_PATH = (Resolve-Path '.toolchain/qt/6.11.2/msvc2022_64').Path
+          cmake -S upstream/port -B build/port -G 'Visual Studio 17 2022' -A x64 -DCMAKE_PREFIX_PATH="$env:CMAKE_PREFIX_PATH" 2>&1 | Tee-Object logs/port-build.log
+          if ($LASTEXITCODE -ne 0) { throw "Quickshell configure failed: $LASTEXITCODE" }
+          cmake --build build/port --config Release 2>&1 | Tee-Object -Append logs/port-build.log
+          if ($LASTEXITCODE -ne 0) { throw "Quickshell build failed: $LASTEXITCODE" }
+      - name: Record Caelestia plugin blocker and attempt configure
+        if: always()
+        shell: pwsh
+        run: |
+          @'
+          Caelestia plugin build is intentionally not claimed complete. At pinned source it unconditionally requires pkg-config modules libqalculate, libpipewire-0.3, aubio, libcava/cava and libsensors, and contains Linux-specific source. No API-preserving Windows stubs/patches are implemented in this harness. A failed configure is an observed blocker, not a successful package.
+          '@ | Out-File -Encoding utf8 logs/plugin-status.txt
+      - name: Upload diagnostic logs only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: caelestia-win-diagnostic-logs
+          path: logs/
+          if-no-files-found: warn

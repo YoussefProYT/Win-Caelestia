@@ -1,0 +1,3 @@
+These `.cmd` shims are behavior placeholders. They log arguments and return success so optional shell actions do not abort; they do not implement the named Linux service. `loginctl lock-session` calls the Windows workstation lock. `systemctl`/`loginctl` poweroff, reboot and suspend calls are dry-run unless `CAELESTIA_WIN_ALLOW_POWER=1`; enabling this variable can immediately shut down or suspend the machine. Do not set it during exploratory testing.
+
+The shim set is incomplete: arbitrary commands configured by the user, shell syntax (`sh -c`), filesystem paths, and QML/plugin platform dependencies are not solved by these executables.

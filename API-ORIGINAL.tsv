@@ -1,0 +1,599 @@
+file	kind	declaration
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobgroup.hpp	Q_PROPERTY	QColor color READ color WRITE setColor NOTIFY colorChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobgroup.hpp	Q_PROPERTY	bool cornerFill READ cornerFill WRITE setCornerFill NOTIFY cornerFillChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobgroup.hpp	Q_PROPERTY	qreal smoothing READ smoothing WRITE setSmoothing NOTIFY smoothingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobgroup.hpp	signal	void colorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobgroup.hpp	signal	void cornerFillChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobgroup.hpp	signal	void smoothingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	Q_PROPERTY	qreal borderBottom READ borderBottom WRITE setBorderBottom NOTIFY borderBottomChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	Q_PROPERTY	qreal borderLeft READ borderLeft WRITE setBorderLeft NOTIFY borderLeftChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	Q_PROPERTY	qreal borderRight READ borderRight WRITE setBorderRight NOTIFY borderRightChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	Q_PROPERTY	qreal borderTop READ borderTop WRITE setBorderTop NOTIFY borderTopChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	signal	void borderBottomChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	signal	void borderLeftChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	signal	void borderRightChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobinvertedrect.hpp	signal	void borderTopChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	QQmlListProperty<caelestia::shell::blobs::BlobRect> exclude READ exclude NOTIFY excludeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	qreal bottomLeftRadius READ bottomLeftRadius WRITE setBottomLeftRadius NOTIFY bottomLeftRadiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	qreal damping READ damping WRITE setDamping NOTIFY dampingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	qreal deformScale READ deformScale WRITE setDeformScale NOTIFY deformScaleChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	qreal stiffness READ stiffness WRITE setStiffness NOTIFY stiffnessChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	qreal topLeftRadius READ topLeftRadius WRITE setTopLeftRadius NOTIFY topLeftRadiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	Q_PROPERTY	qreal topRightRadius READ topRightRadius WRITE setTopRightRadius NOTIFY topRightRadiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void bottomLeftRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void bottomRightRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void dampingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void deformScaleChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void excludeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void excludeCornersChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void stiffnessChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void topLeftRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobrect.hpp	signal	void topRightRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	Q_PROPERTY	QMatrix4x4 deformMatrix READ deformMatrix NOTIFY deformMatrixChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	Q_PROPERTY	QMatrix4x4 rawDeformMatrix READ rawDeformMatrix NOTIFY rawDeformMatrixChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	Q_PROPERTY	caelestia::shell::blobs::BlobGroup* group READ group WRITE setGroup NOTIFY groupChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	Q_PROPERTY	qreal radius READ radius WRITE setRadius NOTIFY radiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	signal	void deformMatrixChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	signal	void groupChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	signal	void radiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Blobs/blobshape.hpp	signal	void rawDeformMatrixChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_INVOKABLE	[[nodiscard]] QQuickItem* itemAt(int index) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_PROPERTY	QQmlComponent* delegate READ delegate WRITE setDelegate NOTIFY delegateChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_PROPERTY	QVariant model READ model WRITE setModel NOTIFY modelChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_PROPERTY	bool adding READ adding NOTIFY addingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_PROPERTY	bool removing READ removing NOTIFY removingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_PROPERTY	int count READ count NOTIFY countChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	Q_PROPERTY	int removeDuration READ removeDuration WRITE setRemoveDuration NOTIFY removeDurationChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void addingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void countChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void delegateChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void itemAdded(int index, QQuickItem* item);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void itemRemoved(int index, QQuickItem* item);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void modelChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void removeDurationChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/animatedrepeater.hpp	signal	void removingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/buttonrow.hpp	Q_PROPERTY	qreal spacing READ spacing WRITE setSpacing NOTIFY spacingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/buttonrow.hpp	signal	void spacingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	Q_PROPERTY	qreal completeEndDuration READ completeEndDuration NOTIFY indeterminateAnimationTypeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	Q_PROPERTY	qreal duration READ duration NOTIFY indeterminateAnimationTypeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	Q_PROPERTY	qreal endFraction READ endFraction NOTIFY endFractionChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	Q_PROPERTY	qreal progress READ progress WRITE setProgress NOTIFY progressChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	Q_PROPERTY	qreal rotation READ rotation NOTIFY rotationChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	Q_PROPERTY	qreal startFraction READ startFraction NOTIFY startFractionChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	signal	void completeEndProgressChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	signal	void endFractionChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	signal	void indeterminateAnimationTypeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	signal	void progressChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	signal	void rotationChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/circularindicatormanager.hpp	signal	void startFractionChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_INVOKABLE	[[nodiscard]] QQuickItem* itemAt(qreal x, qreal y) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_INVOKABLE	[[nodiscard]] QQuickItem* itemAtIndex(int index) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	QAbstractItemModel* model READ model WRITE setModel NOTIFY modelChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	QQmlComponent* delegate READ delegate WRITE setDelegate NOTIFY delegateChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	QRectF viewport READ viewport WRITE setViewport NOTIFY viewportChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool adding READ adding NOTIFY addingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool asynchronous READ asynchronous WRITE setAsynchronous NOTIFY asynchronousChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool cullDelegates READ cullDelegates WRITE setCullDelegates NOTIFY cullDelegatesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool itemsDirty READ itemsDirty NOTIFY itemsDirtyChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool ready READ ready NOTIFY readyChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool removing READ removing NOTIFY removingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool trackViewport READ trackViewport WRITE setTrackViewport NOTIFY trackViewportChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	bool useCustomViewport READ useCustomViewport WRITE setUseCustomViewport NOTIFY useCustomViewportChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	int count READ count NOTIFY countChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	int readyDelay READ readyDelay WRITE setReadyDelay NOTIFY readyDelayChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	int removeDuration READ removeDuration WRITE setRemoveDuration NOTIFY removeDurationChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal cacheBuffer READ cacheBuffer WRITE setCacheBuffer NOTIFY cacheBufferChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal contentHeight READ contentHeight NOTIFY contentHeightChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal contentY READ contentY WRITE setContentY NOTIFY contentYChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal estimatedHeight READ estimatedHeight WRITE setEstimatedHeight NOTIFY estimatedHeightChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal layoutHeight READ layoutHeight NOTIFY layoutHeightChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal layoutY READ layoutY NOTIFY layoutYChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal preferredHeight READ preferredHeight WRITE setPreferredHeight NOTIFY preferredHeightChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal spacing READ spacing WRITE setSpacing NOTIFY spacingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	Q_PROPERTY	qreal visibleHeight READ visibleHeight WRITE setVisibleHeight NOTIFY visibleHeightChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void addingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void asynchronousChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void cacheBufferChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void contentHeightChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void contentYChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void countChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void cullDelegatesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void delegateChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void estimatedHeightChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void itemsDirtyChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void layoutHeightChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void layoutYChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void modelChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void preferredHeightChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void readyChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void readyDelayChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void removeDurationChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void removingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void spacingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void trackViewportChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void useCustomViewportChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void viewportAdjustNeeded(qreal delta);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void viewportChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/lazylistview.hpp	signal	void visibleHeightChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	int gap READ gap WRITE setGap NOTIFY updated FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	int gapSize READ gapSize NOTIFY updated FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	qreal completeEndDuration READ completeEndDuration CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	qreal completeEndProgress READ completeEndProgress WRITE updateCompleteEndProgress NOTIFY updated FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	qreal duration READ duration CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	qreal endFraction READ endFraction NOTIFY updated FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	qreal progress READ progress WRITE update NOTIFY updated FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	Q_PROPERTY	qreal startFraction READ startFraction NOTIFY updated FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/linearindicatormanager.hpp	signal	void updated();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	Q_PROPERTY	QColor color READ color WRITE setColor NOTIFY colorChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	Q_PROPERTY	QQuickItem* source READ source WRITE setSource NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	Q_PROPERTY	qreal bottomLeftRadius READ bottomLeftRadius WRITE setBottomLeftRadius NOTIFY bottomLeftRadiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	Q_PROPERTY	qreal topLeftRadius READ topLeftRadius WRITE setTopLeftRadius NOTIFY topLeftRadiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	Q_PROPERTY	qreal topRightRadius READ topRightRadius WRITE setTopRightRadius NOTIFY topRightRadiusChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	signal	void bottomLeftRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	signal	void bottomRightRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	signal	void colorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	signal	void sourceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	signal	void topLeftRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/roundedmask.hpp	signal	void topRightRadiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	QColor line1Color READ line1Color WRITE setLine1Color NOTIFY line1ColorChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	QColor line2Color READ line2Color WRITE setLine2Color NOTIFY line2ColorChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	caelestia::shell::CircularBuffer* line1 READ line1 WRITE setLine1 NOTIFY line1Changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	caelestia::shell::CircularBuffer* line2 READ line2 WRITE setLine2 NOTIFY line2Changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	int historyLength READ historyLength WRITE setHistoryLength NOTIFY historyLengthChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	qreal line1FillAlpha READ line1FillAlpha WRITE setLine1FillAlpha NOTIFY line1FillAlphaChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	qreal line2FillAlpha READ line2FillAlpha WRITE setLine2FillAlpha NOTIFY line2FillAlphaChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	qreal lineWidth READ lineWidth WRITE setLineWidth NOTIFY lineWidthChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	qreal maxValue READ maxValue WRITE setMaxValue NOTIFY maxValueChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	Q_PROPERTY	qreal slideProgress READ slideProgress WRITE setSlideProgress NOTIFY slideProgressChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void historyLengthChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void line1Changed();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void line1ColorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void line1FillAlphaChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void line2Changed();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void line2ColorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void line2FillAlphaChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void lineWidthChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void maxValueChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/sparklineitem.hpp	signal	void slideProgressChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_INVOKABLE	void advance(qreal dt)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	QColor primaryColor READ primaryColor WRITE setPrimaryColor NOTIFY primaryColorChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	QColor secondaryColor READ secondaryColor WRITE setSecondaryColor NOTIFY secondaryColorChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	QVector<double> values READ values WRITE setValues NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	bool settled READ settled NOTIFY settledChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	int animationDuration READ animationDuration WRITE setAnimationDuration NOTIFY animationDurationChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	qreal rounding READ rounding WRITE setRounding NOTIFY roundingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	Q_PROPERTY	qreal spacing READ spacing WRITE setSpacing NOTIFY spacingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void animationDurationChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void primaryColorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void roundingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void secondaryColorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void settledChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void spacingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/visualiserbars.hpp	signal	void valuesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	PathType pathType READ pathType WRITE setPathType NOTIFY pathTypeChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	QColor color READ color WRITE setColor NOTIFY colorChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	int frequency READ frequency WRITE setFrequency NOTIFY frequencyChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	int lineWidth READ lineWidth WRITE setLineWidth NOTIFY lineWidthChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal fullAngle READ fullAngle WRITE setFullAngle NOTIFY fullAngleChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal fullLength READ fullLength WRITE setFullLength NOTIFY fullLengthChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal radius READ radius WRITE setRadius NOTIFY radiusChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal startAngle READ startAngle WRITE setStartAngle NOTIFY startAngleChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal startX READ startX WRITE setStartX NOTIFY startXChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal value READ value WRITE setValue NOTIFY valueChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	Q_PROPERTY	qreal waveProgress READ waveProgress WRITE setWaveProgress NOTIFY waveProgressChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void amplitudeMultiplierChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void colorChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void frequencyChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void fullAngleChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void fullLengthChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void lineWidthChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void pathTypeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void radiusChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void startAngleChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void startXChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void valueChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Components/wavyline.hpp	signal	void waveProgressChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve emphasized READ emphasized NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve emphasizedAccel READ emphasizedAccel NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve emphasizedDecel READ emphasizedDecel NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve expressiveDefaultEffects READ expressiveDefaultEffects NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve expressiveDefaultSpatial READ expressiveDefaultSpatial NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve expressiveFastEffects READ expressiveFastEffects NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve expressiveFastSpatial READ expressiveFastSpatial NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve expressiveSlowEffects READ expressiveSlowEffects NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve expressiveSlowSpatial READ expressiveSlowSpatial NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve standard READ standard NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve standardAccel READ standardAccel NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	QEasingCurve standardDecel READ standardDecel NOTIFY curvesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	Q_PROPERTY	caelestia::shell::config::AnimDurations* durations READ durations NOTIFY durationsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	signal	void curvesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/anim.hpp	signal	void durationsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int expressiveDefaultEffects READ expressiveDefaultEffects NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int expressiveDefaultSpatial READ expressiveDefaultSpatial NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int expressiveFastEffects READ expressiveFastEffects NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int expressiveFastSpatial READ expressiveFastSpatial NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int expressiveSlowEffects READ expressiveSlowEffects NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int expressiveSlowSpatial READ expressiveSlowSpatial NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int extraExtraLarge READ extraExtraLarge NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int extraLarge READ extraLarge NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int extraLargeIncreased READ extraLargeIncreased NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int extraSmall READ extraSmall NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int full READ full NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int large READ large NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int largeIncreased READ largeIncreased NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int medium READ medium NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int normal READ normal NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	Q_PROPERTY	int small READ small NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/appearanceconfig.hpp	signal	void valuesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/borderconfig.hpp	Q_PROPERTY	int clampedThickness READ clampedThickness NOTIFY thicknessChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/borderconfig.hpp	Q_PROPERTY	int minThickness READ minThickness CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_INVOKABLE	static caelestia::shell::config::ConfigRoot* forScreen(const QString& screen)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	QString screen READ screen WRITE inheritScreen NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::AppearanceConfig* appearance READ appearance NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::BackgroundConfig* background READ background NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::BarConfig* bar READ bar NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::BorderConfig* border READ border NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::DashboardConfig* dashboard READ dashboard NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::GeneralConfig* general READ general NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::LauncherConfig* launcher READ launcher NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::LockConfig* lock READ lock NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::NexusConfig* nexus READ nexus NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::NotifsConfig* notifs READ notifs NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::OsdConfig* osd READ osd NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::ServiceConfig* services READ services NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::SessionConfig* session READ session NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::SidebarConfig* sidebar READ sidebar NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::UserPaths* paths READ paths NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	Q_PROPERTY	const caelestia::shell::config::UtilitiesConfig* utilities READ utilities NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/configattached.hpp	signal	void sourceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder size(int pointSize)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	QFont extraLarge READ extraLarge NOTIFY fontsChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	QFont large READ large NOTIFY fontsChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	QFont medium READ medium NOTIFY fontsChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	QFont small READ small NOTIFY fontsChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	QString workspaces READ workspaces NOTIFY workspacesChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontBuilder clock READ clock NOTIFY clockChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontBuilder extraLarge READ extraLarge NOTIFY buildersChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontBuilder large READ large NOTIFY buildersChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontBuilder medium READ medium NOTIFY buildersChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontBuilder small READ small NOTIFY buildersChanged FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontBuilders* builders READ builders CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontStyle* body READ body CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontStyle* headline READ headline CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontStyle* label READ label CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontStyle* mono READ mono CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::FontStyle* title READ title CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::IconFontBuilders* builders READ builders CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	Q_PROPERTY	caelestia::shell::config::IconFontStyle* icon READ icon CONSTANT FINAL
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	signal	void buildersChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	signal	void clockChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	signal	void fontsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/font.hpp	signal	void workspacesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	QFont build() const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder capitalisation(QFont::Capitalization cap)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder family(const QString& family)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder fill(float value)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder grade(float value)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder italic(bool on = true)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder letterSpacing(qreal spacing, bool absolute = true)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder scale(qreal factor)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder size(int pointSize)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder stretch(int stretch)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder vaxes(const QVariantMap& axes)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder vaxis(const QString& tag, float value)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder weight(QFont::Weight weight)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/fontbuilder.hpp	Q_INVOKABLE	caelestia::shell::config::FontBuilder width(float value)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_INVOKABLE	static caelestia::shell::config::TokensRoot* forScreen(const QString& screen)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	QString screen READ screen WRITE inheritScreen NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	const caelestia::shell::config::AnimTokens* anim READ anim CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	const caelestia::shell::config::AppearancePadding* padding READ padding NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	const caelestia::shell::config::AppearanceRounding* rounding READ rounding NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	const caelestia::shell::config::AppearanceSpacing* spacing READ spacing NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	const caelestia::shell::config::FontTokens* font READ font NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	Q_PROPERTY	const caelestia::shell::config::SizeTokens* sizes READ sizes NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Config/tokensattached.hpp	signal	void sourceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_INVOKABLE	[[nodiscard]] QString _tr(const QString& text, const QString& context, bool markedOnly) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_INVOKABLE	[[nodiscard]] QString _trN( const QString& text, const QString& plural, int n, const QString& context) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_INVOKABLE	[[nodiscard]] static QString mark(const QString& text, const QStringList& args =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_INVOKABLE	[[nodiscard]] static QString markCtx( const QString& text, const QString& context, const QStringList& args =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_INVOKABLE	[[nodiscard]] static QString markCtxN( const QString& text, const QString& plural, int n, const QString& context, const QStringList& args =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_INVOKABLE	[[nodiscard]] static QString markN( const QString& text, const QString& plural, int n, const QStringList& args =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_PROPERTY	QLocale locale READ locale NOTIFY languageChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_PROPERTY	QString language READ language WRITE setLanguageQml NOTIFY languageChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_PROPERTY	QStringList supportedLanguages READ supportedLanguages CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	Q_PROPERTY	bool __trsChanged READ trsChangedFlag NOTIFY languageChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/I18n/translator.hpp	signal	void languageChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	Q_INVOKABLE	void requestUpdate()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	Q_PROPERTY	QColor dominantColour READ dominantColour NOTIFY dominantColourChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	Q_PROPERTY	QQuickItem* sourceItem READ sourceItem WRITE setSourceItem NOTIFY sourceItemChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	Q_PROPERTY	QString source READ source WRITE setSource NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	Q_PROPERTY	int rescaleSize READ rescaleSize WRITE setRescaleSize NOTIFY rescaleSizeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	Q_PROPERTY	qreal luminance READ luminance NOTIFY luminanceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	signal	void dominantColourChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	signal	void luminanceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	signal	void rescaleSizeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	signal	void sourceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Images/imageanalyser.hpp	signal	void sourceItemChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_INVOKABLE	void incrementFrequency(const QString& id)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QObject* entry READ entry CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QObjectList entries READ entries WRITE setEntries NOTIFY entriesChanged REQUIRED
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QQmlListProperty<caelestia::shell::models::AppEntry> apps READ apps NOTIFY appsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString categories READ categories NOTIFY categoriesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString comment READ comment NOTIFY commentChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString execString READ execString NOTIFY execStringChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString genericName READ genericName NOTIFY genericNameChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString id READ id CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString keywords READ keywords NOTIFY keywordsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString name READ name NOTIFY nameChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString path READ path WRITE setPath NOTIFY pathChanged REQUIRED
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString startupClass READ startupClass NOTIFY startupClassChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QString uuid READ uuid CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	QStringList favouriteApps READ favouriteApps WRITE setFavouriteApps NOTIFY favouriteAppsChanged REQUIRED
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	Q_PROPERTY	quint32 frequency READ frequency NOTIFY frequencyChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void appsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void categoriesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void commentChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void entriesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void execStringChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void favouriteAppsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void frequencyChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void genericNameChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void keywordsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void nameChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void pathChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/appdb.hpp	signal	void startupClassChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QQmlListProperty<caelestia::shell::models::FileSystemEntry> entries READ entries NOTIFY entriesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString baseName READ baseName CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString mimeType READ mimeType CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString name READ name CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString parentDir READ parentDir CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString path READ path CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString path READ path WRITE setPath NOTIFY pathChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString relativePath READ relativePath NOTIFY relativePathChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QString suffix READ suffix CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	QStringList nameFilters READ nameFilters WRITE setNameFilters NOTIFY nameFiltersChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	bool isDir READ isDir CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	bool isImage READ isImage CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	bool recursive READ recursive WRITE setRecursive NOTIFY recursiveChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	bool showHidden READ showHidden WRITE setShowHidden NOTIFY showHiddenChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	bool sortReverse READ sortReverse WRITE setSortReverse NOTIFY sortReverseChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	bool watchChanges READ watchChanges WRITE setWatchChanges NOTIFY watchChangesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	Q_PROPERTY	qint64 size READ size CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void entriesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void filterChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void nameFiltersChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void pathChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void recursiveChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void relativePathChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void showHiddenChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void sortReverseChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Models/filesystemmodel.hpp	signal	void watchChangesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	QObject* videoOutput READ videoOutput WRITE setVideoOutput NOTIFY videoOutputChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	QQuickItem* sizeSource READ sizeSource WRITE setSizeSource NOTIFY sizeSourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	QSize sourceSize READ sourceSize NOTIFY sourceSizeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	QString source READ source WRITE setSource NOTIFY sourceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	QUrl imagePath READ imagePath NOTIFY imagePathChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	bool playing READ playing WRITE setPlaying NOTIFY playingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	bool videoReady READ videoReady NOTIFY videoReadyChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	Q_PROPERTY	caelestia::shell::multimedia::VisualSource::Type type READ type NOTIFY typeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void fillModeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void imagePathChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void playingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void sizeSourceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void sourceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void sourceSizeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void typeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void videoOutputChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Multimedia/visualsource.hpp	signal	void videoReadyChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/beattracker.hpp	Q_PROPERTY	smpl_t bpm READ bpm NOTIFY bpmChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/beattracker.hpp	signal	void beat(smpl_t bpm);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/beattracker.hpp	signal	void bpmChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cavaprovider.hpp	Q_PROPERTY	QVector<double> values READ values NOTIFY valuesChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cavaprovider.hpp	Q_PROPERTY	int bars READ bars WRITE setBars NOTIFY barsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cavaprovider.hpp	signal	void barsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cavaprovider.hpp	signal	void valuesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cavaprovider.hpp	signal	void valuesChanged(QVector<double> values);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cpu.hpp	Q_PROPERTY	QString name READ name NOTIFY nameChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cpu.hpp	Q_PROPERTY	qreal percentage READ percentage NOTIFY percentageChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cpu.hpp	Q_PROPERTY	qreal temperature READ temperature NOTIFY temperatureChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cpu.hpp	signal	void nameChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cpu.hpp	signal	void percentageChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/cpu.hpp	signal	void temperatureChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	Q_PROPERTY	QString mount READ mount CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	Q_PROPERTY	bool hasRoot READ hasRoot NOTIFY hasRootChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	Q_PROPERTY	qreal free READ free NOTIFY freeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	Q_PROPERTY	qreal perc READ perc NOTIFY percChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	Q_PROPERTY	qreal total READ total NOTIFY totalChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	Q_PROPERTY	qreal used READ used NOTIFY usedChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	signal	void freeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	signal	void hasRootChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	signal	void percChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	signal	void totalChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/diskinfo.hpp	signal	void usedChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	Q_PROPERTY	QString name READ name NOTIFY nameChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	Q_PROPERTY	bool detecting READ detecting NOTIFY detectingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	Q_PROPERTY	caelestia::shell::config::GpuType::Enum type READ type NOTIFY typeChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	Q_PROPERTY	qreal percentage READ percentage NOTIFY percentageChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	Q_PROPERTY	qreal temperature READ temperature NOTIFY temperatureChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	signal	void detectingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	signal	void nameChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	signal	void percentageChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	signal	void temperatureChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/gpu.hpp	signal	void typeChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	QString activeKeymap READ activeKeymap NOTIFY activeKeymapChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	QString address READ address NOTIFY addressChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	QString layout READ layout NOTIFY layoutChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	QString name READ name NOTIFY nameChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	QVariantHash lastIpcObject READ lastIpcObject NOTIFY lastIpcObjectChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	bool capsLock READ capsLock NOTIFY capsLockChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	bool main READ main NOTIFY mainChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	Q_PROPERTY	bool numLock READ numLock NOTIFY numLockChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void activeKeymapChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void addressChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void capsLockChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void keyboardsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void lastIpcObjectChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void layoutChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void mainChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void nameChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprdevices.hpp	signal	void numLockChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_INVOKABLE	void applyOptions(const QVariantHash& options)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_INVOKABLE	void batchMessage(const QStringList& messages)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_INVOKABLE	void message(const QString& message)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_INVOKABLE	void refreshDevices()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_INVOKABLE	void refreshOptions()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_PROPERTY	QVariantHash options READ options NOTIFY optionsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_PROPERTY	bool usingLua MEMBER m_usingLua NOTIFY usingLuaChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	Q_PROPERTY	caelestia::shell::services::hypr::HyprDevices* devices READ devices CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	signal	void optionsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/hyprextras.hpp	signal	void usingLuaChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyriccandidate.hpp	Q_PROPERTY	QString album READ album
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyriccandidate.hpp	Q_PROPERTY	QString artist READ artist
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyriccandidate.hpp	Q_PROPERTY	QString id READ id
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyriccandidate.hpp	Q_PROPERTY	QString title READ title
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyriccandidate.hpp	Q_PROPERTY	caelestia::shell::config::LyricsBackend::Enum backend READ backend
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyriccandidate.hpp	Q_PROPERTY	qreal duration READ duration
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_INVOKABLE	int indexForTime(qreal time) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_INVOKABLE	qreal timeForIndex(int index) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_INVOKABLE	void clearTrack()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_INVOKABLE	void refresh()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_INVOKABLE	void setTrack( const QString& artist, const QString& title, const QString& album =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	QString trackArtist READ trackArtist NOTIFY trackChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	QString trackTitle READ trackTitle NOTIFY trackChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	QStringList lyrics READ lyrics NOTIFY lyricsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	bool hasLyrics READ hasLyrics NOTIFY hasLyricsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	bool loading READ loading NOTIFY loadingChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	caelestia::shell::config::LyricsBackend::Enum backend READ backend NOTIFY backendChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	Q_PROPERTY	qreal offset READ offset WRITE setOffset NOTIFY offsetChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void backendChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void hasLyricsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void loadingChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void lyricCandidatesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void lyricsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void offsetChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void preferredBackendChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void selectedCandidateChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/lyrics.hpp	signal	void trackChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/memory.hpp	Q_PROPERTY	qreal percentage READ percentage NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/memory.hpp	Q_PROPERTY	qreal total READ total NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/memory.hpp	Q_PROPERTY	qreal used READ used NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/memory.hpp	signal	void changed();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	caelestia::shell::CircularBuffer* downloadBuffer READ downloadBuffer CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	caelestia::shell::CircularBuffer* uploadBuffer READ uploadBuffer CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	int historyLength READ historyLength CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	qreal downloadSpeed READ downloadSpeed NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	qreal downloadTotal READ downloadTotal NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	qreal uploadSpeed READ uploadSpeed NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	Q_PROPERTY	qreal uploadTotal READ uploadTotal NOTIFY changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/networkusage.hpp	signal	void changed();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/serviceref.hpp	Q_PROPERTY	caelestia::shell::services::Service* service READ service WRITE setService NOTIFY serviceChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/serviceref.hpp	signal	void serviceChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	bool exec(const QStringList& command)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	void hibernate()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	void logout()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	void poweroff()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	void reboot()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	void suspend()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	Q_INVOKABLE	void suspendThenHibernate()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	private slots: void handlePrepareForSleep(bool sleep);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	void aboutToSleep();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	void handleLockRequested();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	void handleUnlockRequested();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	void lockRequested();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	void resumed();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/sessionmanager.hpp	signal	void unlockRequested();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	Q_PROPERTY	QQmlListProperty<caelestia::shell::services::DiskInfo> disks READ disksProp NOTIFY disksChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	Q_PROPERTY	caelestia::shell::services::DiskInfo* primaryDisk READ primaryDisk NOTIFY primaryDiskChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	Q_PROPERTY	qreal percentage READ percentage NOTIFY percentageChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	signal	void disksChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	signal	void manualPrimaryDiskChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	signal	void percentageChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/storage.hpp	signal	void primaryDiskChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/tickingservice.hpp	Q_PROPERTY	int updateInterval READ updateInterval NOTIFY updateIntervalChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Services/tickingservice.hpp	signal	void updateIntervalChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/changebatcher.hpp	signal	void dirtied();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/common.hpp	Q_INVOKABLE	static QString toString(caelestia::shell::settings::DiagnosticType::Type t)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/common.hpp	Q_PROPERTY	DiagnosticType::Type type MEMBER type
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/common.hpp	Q_PROPERTY	QString message MEMBER message
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/common.hpp	Q_PROPERTY	QString option MEMBER option
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	Q_INVOKABLE	void clear()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	Q_INVOKABLE	void move(qsizetype from, qsizetype to)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	Q_INVOKABLE	void remove(qsizetype index)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	Q_PROPERTY	QVariantList values READ values NOTIFY elementsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	Q_PROPERTY	qsizetype count READ count NOTIFY countChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	signal	void countChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/listnode.hpp	signal	void elementsChanged(const caelestia::shell::settings::ListNode::NodeChanges& added, const caelestia::shell::settings::ListNode::NodeChanges& removed, const caelestia::shell::settings::ListNode::MoveChanges& moved);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/macros.hpp	Q_INVOKABLE	Element* at(qsizetype index) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/macros.hpp	Q_INVOKABLE	Element* insert(const QVariantMap& props, qsizetype index = -1)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/macros.hpp	Q_PROPERTY	Type name READ name WRITE set_##name NOTIFY name##Changed
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/macros.hpp	Q_PROPERTY	Type* name READ name CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/macros.hpp	Q_SIGNAL	void name##Changed()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/node.hpp	Q_INVOKABLE	bool isGlobalOnly() const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/node.hpp	signal	void optionChanged(const QString& key);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/objectnode.hpp	Q_INVOKABLE	caelestia::shell::settings::Descriptor descriptorFor(const QString& key) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/objectnode.hpp	Q_INVOKABLE	void resetOption(const QString& key)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/rootnode.hpp	Q_PROPERTY	QList<caelestia::shell::settings::Diagnostic> diagnostics READ diagnostics NOTIFY diagnosticsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/rootnode.hpp	signal	void diagnosticsChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/rootnode.hpp	signal	void treeLoadFailed(caelestia::shell::settings::RootNode* self, const QString& error);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/rootnode.hpp	signal	void treeLoaded(caelestia::shell::settings::RootNode* self);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/rootnode.hpp	signal	void treeSaveFailed(caelestia::shell::settings::RootNode* self, const QString& error);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/schema.hpp	Q_PROPERTY	QString key MEMBER key
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/schema.hpp	Q_PROPERTY	QString type READ typeString
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/schema.hpp	Q_PROPERTY	Type name READ name
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/schema.hpp	Q_PROPERTY	bool isNode MEMBER isNode
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/schema.hpp	Q_PROPERTY	int metaIndex MEMBER metaIndex
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/settingsfile.hpp	signal	void changed();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/settingsfile.hpp	signal	void readFailed(const QString& error);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/settingsfile.hpp	signal	void writeFailed(const QString& error);
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Settings/singleton.hpp	Q_INVOKABLE	Root* forScreen(const QString& screen)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Shaders/shaders.hpp	Q_PROPERTY	QEasingCurve easing MEMBER easing CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Shaders/shaders.hpp	Q_PROPERTY	QUrl url MEMBER url CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Shaders/shaders.hpp	Q_PROPERTY	caelestia::shell::shaders::TransitionShader name READ name CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/Shaders/shaders.hpp	Q_PROPERTY	int duration MEMBER duration CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	Q_INVOKABLE	qreal at(int index) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	Q_INVOKABLE	void clear()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	Q_INVOKABLE	void push(qreal value)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	Q_PROPERTY	int capacity READ capacity WRITE setCapacity NOTIFY capacityChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	Q_PROPERTY	int count READ count NOTIFY countChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	Q_PROPERTY	qreal maximum READ maximum NOTIFY maximumChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	signal	void capacityChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	signal	void countChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	signal	void maximumChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/circularbuffer.hpp	signal	void valuesChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static QList<QQuickItem*> findChildren(QQuickItem* root, const QString& name)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static QList<QQuickItem*> findChildrenMatching(QQuickItem* root, const QString& pattern)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static QQuickItem* findChild(QQuickItem* root, const QString& name)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static QString enumToString(QObject* target, const QString& property, const QVariant& value =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static QString toLocalFile(const QUrl& url)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static bool copyFile(const QUrl& source, const QUrl& target, bool overwrite = true)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static bool deleteFile(const QUrl& path)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static qreal clamp(qreal value, qreal min, qreal max)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	static void dependency(const QVariant& value)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	void saveItem( QQuickItem* target, const QUrl& path, const QJSValue& onSaved =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_INVOKABLE	void saveItem(QQuickItem* target, const QUrl& path, const QRect& rect, const QJSValue& onSaved =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_PROPERTY	QString qtVersion READ qtVersion CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/cutils.hpp	Q_PROPERTY	QString version READ version CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	Q_INVOKABLE	static QString eval(const QString& expr, bool printExpr = true)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	Q_INVOKABLE	void evalAsync(const QString& expr)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	Q_PROPERTY	QString rawResult READ rawResult NOTIFY rawResultChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	Q_PROPERTY	QString result READ result NOTIFY resultChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	Q_PROPERTY	bool busy READ busy NOTIFY busyChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	signal	void busyChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	signal	void rawResultChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/qalculator.hpp	signal	void resultChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/requests.hpp	Q_INVOKABLE	void get(const QUrl& url, const QJSValue& onSuccess, const QJSValue& onError = QJSValue(), const QJSValue& headers = QJSValue()) const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/requests.hpp	Q_INVOKABLE	void resetCookies() const
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_INVOKABLE	void close()
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_INVOKABLE	void lock(QObject* sender)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_INVOKABLE	void toast(const QString& title, const QString& message, const QString& icon =
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_INVOKABLE	void unlock(QObject* sender)
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	QQmlListProperty<caelestia::shell::Toast> toasts READ toasts NOTIFY toastsChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	QString icon READ icon CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	QString message READ message CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	QString title READ title CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	Type type READ type CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	bool closed READ closed NOTIFY closedChanged
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	Q_PROPERTY	int timeout READ timeout CONSTANT
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	signal	void closedChanged();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	signal	void finishedClose();
+/home/ubuntu/caelestia-win-work/src/caelestia/plugin/src/Caelestia/toaster.hpp	signal	void toastsChanged();
